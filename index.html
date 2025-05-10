@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dahi Masajes</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+
+  <!-- Hoja de estilos personalizada -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <style>
+    /* Ajustes responsivos para la hero-section */
+    @media (max-width: 768px) {
+      .hero-section {
+        height: 40vh;
+        padding-top: 2rem;
+      }
+      .hero-section h1 {
+        font-size: 1.8rem;
+      }
+      .hero-section p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="#" id="logo">Dahi <span>Masajes</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#masajes">Masajes</a></li>
+          <li class="nav-item"><a class="nav-link" href="#galeria">Galería</a></li>
+          <li class="nav-item"><a class="nav-link" href="#reservas">Reservas</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <header class="hero-section text-center d-flex align-items-center" style="background: url('imagenes/16.jpg') center/cover no-repeat; height: 60vh;">
+    <div class="container">
+      <h1 class="display-4 fw-bold">Bienvenido a Dahi Masajes</h1>
+      <p class="lead">Relájate y renueva tu mente y cuerpo con nuestros masajes únicos.</p>
+      <!-- Puedes dejar el botón para reservar comentado o activarlo según prefieras -->
+      <!-- <a href="#reservas" class="btn btn-outline-dark btn-lg">Reservar Ahora</a> -->
+    </div>
+  </header>
+
+  <!-- SECCIÓN "NUESTROS MASAJES" -->
+  <section id="masajes" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Nuestros Masajes</h2>
+      <div class="row g-4">
+        <!-- Tarjeta: Masaje Descontracturante -->
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="card h-100">
+            <img src="imagenes/10.jpg" class="card-img-top" alt="Masaje Descontracturante" />
+            <div class="card-body">
+              <h5 class="card-title">Masaje Descontracturante</h5>
+              <p class="card-text">
+                Disfruta de un masaje para aliviar tensiones musculares.
+                <br /><em>"Permítete desconectar, cada tensión se transforma en serenidad."</em>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Tarjeta: Masaje Relajante -->
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="card h-100">
+            <img src="imagenes/11.jpg" class="card-img-top" alt="Masaje Relajante" />
+            <div class="card-body">
+              <h5 class="card-title">Masaje Relajante</h5>
+              <p class="card-text">
+                Un tratamiento suave para recuperar la calma y el bienestar.
+                <br /><em>"El cuidado de tu ser comienza con un instante de paz."</em>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Tarjeta: Masaje Terapéutico -->
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="card h-100">
+            <img src="imagenes/12.jpg" class="card-img-top" alt="Masaje Terapéutico" />
+            <div class="card-body">
+              <h5 class="card-title">Masaje Terapéutico</h5>
+              <p class="card-text">
+                Técnica especializada para tratar dolencias.
+                <br /><em>"Cada toque es un paso hacia una vida sin dolor."</em>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Tarjeta: Masaje Reductores -->
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="card h-100">
+            <img src="imagenes/17.jpg" class="card-img-top" alt="Masaje Reductores" />
+            <div class="card-body">
+              <h5 class="card-title">Masaje Reductores</h5>
+              <p class="card-text">
+                Realza tu silueta y tonifica tu cuerpo.
+                <br /><em>"Renueva tu figura y siente la transformación."</em>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN DE GALERÍA -->
+  <section id="galeria" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Galería</h2>
+      <div class="row g-4">
+        <!-- Elemento de galería: Masaje Descontracturante -->
+        <div class="col-12 col-sm-6 col-md-4">
+          <figure class="text-center">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#modalDes">
+              <img src="imagenes/10.jpg" class="img-fluid rounded" alt="Masaje Descontracturante" />
+            </a>
+            <figcaption class="mt-2">Masaje Descontracturante</figcaption>
+          </figure>
+        </div>
+        <!-- Elemento de galería: Masaje Relajante -->
+        <div class="col-12 col-sm-6 col-md-4">
+          <figure class="text-center">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#modalRel">
+              <img src="imagenes/11.jpg" class="img-fluid rounded" alt="Masaje Relajante" />
+            </a>
+            <figcaption class="mt-2">Masaje Relajante</figcaption>
+          </figure>
+        </div>
+        <!-- Elemento de galería: Masaje Terapéutico -->
+        <div class="col-12 col-sm-6 col-md-4">
+          <figure class="text-center">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#modalTer">
+              <img src="imagenes/12.jpg" class="img-fluid rounded" alt="Masaje Terapéutico" />
+            </a>
+            <figcaption class="mt-2">Masaje Terapéutico</figcaption>
+          </figure>
+        </div>
+        <!-- Elemento de galería: Masaje Reductores -->
+        <div class="col-12 col-sm-6 col-md-4">
+          <figure class="text-center">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#modalRed">
+              <img src="imagenes/17.jpg" class="img-fluid rounded" alt="Masaje Reductores" />
+            </a>
+            <figcaption class="mt-2">Masaje Reductores</figcaption>
+          </figure>
+        </div>
+        <!-- Elemento de galería: Vista Adicional 1 -->
+        <div class="col-12 col-sm-6 col-md-4">
+          <figure class="text-center">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#modalExtra1">
+              <img src="imagenes/14.jpg" class="img-fluid rounded" alt="Vista Adicional 1" />
+            </a>
+            <figcaption class="mt-2">Disruta</figcaption>
+          </figure>
+        </div>
+        <!-- Elemento de galería: Vista Adicional 2 -->
+        <div class="col-12 col-sm-6 col-md-4">
+          <figure class="text-center">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#modalExtra2">
+              <img src="imagenes/13.jpg" class="img-fluid rounded" alt="Vista Adicional 2" />
+            </a>
+            <figcaption class="mt-2">Relajate</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN DE RESERVAS -->
+  <section id="reservas" class="py-5 bg-rosa">
+    <div class="container">
+      <h2 class="text-center mb-4">Reserva tu Sesión</h2>
+      <div class="text-center">
+        <!-- Botón centrado que redirige al calendario de reserva de Setmore -->
+        <a href="https://washi200913.setmore.com/book?step=time-slot&products=0131533f-1d3c-4572-83a8-0fb16027039b&type=service&staff=1c56e0be-e4f7-446c-857c-da90aaaed53d&staffSelected=true" target="_blank" class="btn btn-primary btn-lg">
+          RESERVE CITA
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- MODALES DE GALERÍA -->
+  <!-- Modal Masaje Descontracturante -->
+  <div class="modal fade" id="modalDes" tabindex="-1" aria-labelledby="modalDesLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalDesLabel">Masaje Descontracturante</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <img src="imagenes/10.jpg" class="img-fluid mb-3" alt="Masaje Descontracturante" />
+          <p>El masaje descontracturante está diseñado para liberar la tensión acumulada en los músculos, aliviando dolores y mejorando la circulación. Permítete desconectar y transformar cada tensión en serenidad.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal Masaje Relajante -->
+  <div class="modal fade" id="modalRel" tabindex="-1" aria-labelledby="modalRelLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalRelLabel">Masaje Relajante</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <img src="imagenes/11.jpg" class="img-fluid mb-3" alt="Masaje Relajante" />
+          <p>El masaje relajante proporciona una experiencia de calma profunda, liberando el estrés y promoviendo la paz interior. Siente cómo cada toque te conduce a un instante de total bienestar.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal Masaje Terapéutico -->
+  <div class="modal fade" id="modalTer" tabindex="-1" aria-labelledby="modalTerLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalTerLabel">Masaje Terapéutico</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <img src="imagenes/12.jpg" class="img-fluid mb-3" alt="Masaje Terapéutico" />
+          <p>Mediante técnicas específicas, este masaje terapéutico trata dolencias y restaura el equilibrio corporal. Cada toque está pensado para atacar áreas problemáticas y aliviar tensiones profundas.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal Masaje Reductores -->
+  <div class="modal fade" id="modalRed" tabindex="-1" aria-labelledby="modalRedLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalRedLabel">Masaje Reductores</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <img src="imagenes/17.jpg" class="img-fluid mb-3" alt="Masaje Reductores" />
+          <p>Diseñado para estimular la circulación y favorecer la eliminación de toxinas, este tratamiento ayuda a reestructurar la silueta, combatiendo la celulitis y mejorando la firmeza del cuerpo.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal Vista Adicional 1 -->
+  <div class="modal fade" id="modalExtra1" tabindex="-1" aria-labelledby="modalExtra1Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalExtra1Label">Vista Adicional 1</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <img src="imagenes/14.jpg" class="img-fluid mb-3" alt="Vista Adicional 1" />
+          <p>Una perspectiva complementaria que muestra los detalles y el ambiente relajante que caracteriza a Dahi Masajes.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal Vista Adicional 2 -->
+  <div class="modal fade" id="modalExtra2" tabindex="-1" aria-labelledby="modalExtra2Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalExtra2Label">Vista Adicional 2</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <img src="imagenes/13.jpg" class="img-fluid mb-3" alt="Vista Adicional 2" />
+          <p>Descubre una vista especial que resalta la estética y el cuidado en cada detalle de nuestro espacio.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECCIÓN DE CONTACTO Y REDES SOCIALES -->
+  <footer id="contacto" class="py-4 bg-dark text-white">
+    <div class="container text-center">
+      <p class="mb-1">Redes Sociales</p>
+      <div class="mb-2">
+        <a href="https://www.facebook.com/dahiana.colino" target="_blank" class="text-white me-3">
+          <i class="bi bi-facebook" style="font-size: 1.5rem;"></i>
+        </a>
+        <a href="https://www.instagram.com/dahi.masajes" target="_blank" class="text-white me-3">
+          <i class="bi bi-instagram" style="font-size: 1.5rem;"></i>
+        </a>
+        <a href="https://wa.me/096921784" target="_blank" class="text-white">
+          <i class="bi bi-whatsapp" style="font-size: 1.5rem;"></i>
+        </a>
+      </div>
+      <p>&copy; 2025 Dahi Masajes</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Enlace a tu archivo de JavaScript personalizado -->
+  <script src="script.js"></script>
+  
+  <!-- Registro del Service Worker para la PWA -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('service-worker.js')
+          .then(function(registration) {
+            console.log('Service Worker registrado con éxito:', registration.scope);
+          })
+          .catch(function(error) {
+            console.error('Error al registrar el Service Worker:', error);
+          });
+      });
+    }
+  </script>
+</body>
+</html>
+
+
+
+

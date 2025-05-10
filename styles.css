@@ -1,0 +1,76 @@
+/* Fondo global en tono rosado */
+body {
+  background-color: #ffd1dc;
+  color: #333;
+}
+
+/* Navbar con fondo rosado */
+.navbar {
+  background-color: #ffd1dc !important;
+}
+
+/* Fuente para el logo */
+#logo {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+}
+#logo span {
+  color: #e83e8c;
+}
+
+/* Botones primarios */
+.btn-primary {
+  background-color: #e83e8c;
+  border-color: #e83e8c;
+}
+.btn-primary:hover {
+  background-color: #d63384;
+  border-color: #d63384;
+}
+
+/* Hero Section: texto en negro */
+.hero-section h1,
+.hero-section p {
+  color: #000;
+}
+
+/* Efecto sutil en las tarjetas */
+.card {
+  border: none;
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: scale(1.03);
+}
+
+/* Sección Reservas: fondo rosado uniforme */
+.bg-rosa {
+  background-color: #ffe6f1 !important;
+}
+
+/* Estilos para figuras de la galería y sus captions */
+figure {
+  margin: 0;
+}
+figcaption {
+  font-style: italic;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Enlaces del navbar */
+.navbar-nav .nav-link {
+  font-weight: 500;
+}
+.navbar-nav .nav-link:hover {
+  color: #e83e8c;
+}
+
+/* Footer con fondo oscuro */
+footer {
+  background-color: #333;
+}
+
+
+
